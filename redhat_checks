@@ -1,7 +1,7 @@
 #!/bin/bash
 #Dummy redhat checks
 
-mkdir -p /var/health_checks/ 2> /de/null
+mkdir -p /var/health_checks/ 2> /dev/null
 echo "Running df -Th"
 df -Th > /var/health_checks/df_Th
 
