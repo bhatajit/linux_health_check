@@ -1,0 +1,15 @@
+#!/bin/bash
+#Dummy redhat checks
+
+mkdir -p /var/health_checks/ 2> /de/null
+echo "Running df -Th"
+df -Th > /var/health_checks/df_Th
+
+echo "Running uname -a"
+uname -a > /var/health_checks/uname_a
+
+echo "Running netstat"
+netstat -nrv > /var/health_checks/netstat_rnv
+netstat -tnlup > /var/health_checks/netstat_anp
+
+#End
